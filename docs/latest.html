@@ -1,901 +1,974 @@
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LQJRJV6X9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  gtag('config', 'G-0LQJRJV6X9');
-</script>
-<!-- END Google tag (gtag.js) -->
+  <!-- Title -->
+  <title>Getting Started - Documentation | Front - Multipurpose Responsive Template</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="Content-Language" content="en-us" />
-	<meta name="author" content="Office of Web Communications, Cornell University" />
-	<meta name="copyright" content="Copyright (c) 2014 Cornell University" />
-	<meta name="description" content="Cornell University contains seven undergraduate colleges plus the College of Veterinary Medicine, the Law School, the Samuel Curtis Johnson Graduate School of Management, the Weill Cornell Medical College in New York City and Doha, Qatar, and the 93 fields of study in the Graduate School." />
-	<meta name="keywords" content="university, ivy league, research, undergraduate research, graduate research, transnational, land grant, new york, agriculture and life sciences, architecture, art, planning, engineering, hotel administration, human ecology, industrial and labor relations, law, business management, medicine, pre-med, veterinary medicine, vet school" />
-	<meta name="robots" content="all" />
-	<meta http-equiv="imagetoolbar" content="false" />
-	<meta name="viewport" content="user-scalable = yes" />
-	<meta content='width=device-width, minimum-scale=1, initial-scale=1' name='viewport'>
-	
-	<title>About | CUinfo | Cornell University</title>
-  
-	<link rel="shortcut icon" href="_cornell-assets/favicon.ico" type="image/x-icon" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../favicon.ico">
 
-<!-- Typekit fonts -->
-<script type="text/javascript" src="https://use.typekit.net/gog6dck.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-<!-- Core CSS -->
-	<link rel="stylesheet" href="./static/css/arxiv.css" />
-	<link rel="stylesheet" href="./static/css/arxiv_style.css" />
-<!--[if lt IE 9]>
-<link href="_cornell-assets/core/css/ie.css" rel="stylesheet" />
-<script src="_cornell-assets/core/js/lib/selectivizr.js"></script>
-<link href="_cornell-assets/core/css/ie8down.css" rel="stylesheet" />
-<![endif]-->
-<!--[if gte IE 9]>
-<link href="_cornell-assets/core/css/ie9up.css" rel="stylesheet" />
-<![endif]-->
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="./assets/css/vendor.min.css">
+  <link rel="stylesheet" href="https://htmlstream.com/preview/front-v4.3.1/assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
 
-
-
-<script src="./static/js/modernizr.js"></script>
-
-
-
-	<link rel="stylesheet" href="static/css/grid-css/arxiv.css" />
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="static/css/grid-css/font-awesome.min.css" />
-
-
-
-
-
+  <!-- CSS Front Template -->
+  <link rel="stylesheet" href="./assets/css/theme.min.css">
+  <link rel="stylesheet" href="./assets/css/docs.css.css">
 </head>
 
-<body class="cu-info">
+<body class="navbar-sidebar-aside-lg">
+  <!-- ========== HEADER ========== -->
+  <header id="header" class="navbar navbar-expand navbar-fixed navbar-end navbar-light navbar-sticky-lg-top bg-white">
+    <div class="container-fluid">
+      <nav class="navbar-nav-wrap">
+        <div class="row flex-grow-1">
+          <!-- Default Logo -->
+          <div class="docs-navbar-sidebar-container d-flex align-items-center mb-2 mb-lg-0">
+            <a class="navbar-brand" href="../documentation/index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a href="../documentation/changelog.html">
+              <span class="badge bg-soft-primary text-primary">v4.3.1</span>
+            </a>
+          </div>
+          <!-- End Default Logo -->
 
-  
-<!-- Begin Header -->
-<header id="cu-hdr" class="hdr-embeddedsearch hdr-no-menu">
-              <!-- Search box -->
-<form action="/search" class="cu-search" method="get" role="search" aria-label="Site Search" tabindex="-1">
-    <div class="container">
-      <input autocomplete="off" id="search-query" name="search_api_fulltext" placeholder="Search the Chronicle" required="" type="search" aria-label="Search the Chronicle">
-      <input type="submit" value="Submit Search" style="display: none;">
-    </div>
-  </form>
-  <!-- // Search box -->
+          <div class="col-md px-lg-0">
+            <div class="d-flex justify-content-between align-items-center px-lg-5 px-xl-10">
+              <div class="d-none d-md-block">
+                <!-- Search Form -->
+                <form id="docsSearch" class="position-relative" data-hs-list-options='{
+                       "searchMenu": true,
+                       "keyboard": true,
+                       "item": "searchTemplate",
+                       "valueNames": ["component", "category", {"name": "link", "attr": "href"}],
+                       "empty": "#searchNoResults"
+                     }'>
+                  <!-- Input Group -->
+                  <div class="input-group input-group-merge navbar-input-group">
+                    <div class="input-group-prepend input-group-text">
+                      <i class="bi-search"></i>
+                    </div>
 
-  <div class="cu-hdr-bg"></div>
-  <nav id="skip-link" aria-label="skip link"> <a href="#main" tabindex="1" data-click-category="header" data-click-action="skip to content" id="skip-to-content-link">Skip to content</a> </nav> 
-  <!-- <div class="cu-hdr-inner">
-    <a href="https://www.cornell.edu/" tabindex="2" id="cu-brand" class="nysimpact-brand" title="Cornell.edu Homepage" data-click-category="header" data-click-action="home">
-      <div class="cu-logotype">Cornell University</div>
-    </a>
-    <button class="icon-search" id="search-trigger" tabindex="0" data-click-category="header" data-click-action="search | reveal search box" data-click-label="magnifying glass"><span class="off-screen">Search</span></button>
-  </div> -->
-  
-  <!-- <nav id="cu-nav" data-click-category="header" aria-label="Search">
-    <button id="nav-close" data-click-action="button" data-click-label="close"><div class="icon-reset"></div><span class="off-screen">Close Navigation</span></button>
+                    <input type="search" class="search form-control form-control-sm" placeholder="Search in docs" aria-label="Search in docs">
 
-    <div id="cu-nav-utility">
-      <form action="https://www.cornell.edu/search" class="search-main" method="get" data-click-action="search" role="search" aria-label="Cornell.edu search">
-        <div class="container">
-          <label for="search-query" class="offscreen">Search</label>
-          <input autocomplete="off" id="search-query" name="q" placeholder="Search Cornell" required="" type="search" title="Search" tabindex="3">
+                    <a class="input-group-append input-group-text" href="javascript:;">
+                      <i id="clearSearchResultsIcon" class="bi-x" style="display: none;"></i>
+                    </a>
+                  </div>
+                  <!-- End Input Group -->
 
-          <button class="icon-search search-submit" type="submit" tabindex="4" id="icon-search-button"><span class="off-screen">Search</span></button>
-        </div>
-      </form>
-    </div>
-  </nav> -->
-</header>
+                  <!-- List -->
+                  <div class="list dropdown-menu navbar-dropdown-menu-borderless w-100 overflow-auto" style="max-height: 16rem;"></div>
+                  <!-- End List -->
 
+                  <!-- Empty -->
+                  <div id="searchNoResults" style="display: none;">
+                    <div class="text-center p-4">
+                      <img class="mb-3" src="../assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;">
+                      <p class="mb-0">No Results</p>
+                    </div>
+                  </div>
+                  <!-- End Empty -->
+                </form>
+                <!-- End Search Form -->
 
+                <!-- List Item Template -->
+                <div class="d-none">
+                  <div id="searchTemplate" class="dropdown-item">
+                    <a class="d-block link" href="#">
+                      <span class="category d-block fw-normal text-muted mb-1"></span>
+                      <span class="component text-dark"></span>
+                    </a>
+                  </div>
+                </div>
+                <!-- End List Item Template -->
+              </div>
 
-
-  <div id="main" role="main" data-click-category="miscellaneous">
-    <div class="container">
-
-      
-      <a id="mobile-toggle" href="#aria-main-nav" data-click-category="nav" data-click-action="show/hide" data-click-label="mobile toggle button" aria-expanded="false" aria-controls="aria-main-nav"><span class="label-text" data-target="#navigation">Toggle Navigation</span><span class="fa fa-angle-double-right"></span></a>
-
-      <div class="cu-info-wrapper grid_layout">
-        
-        <div class="grid_item grid_nav">
-          
-
-<!-- main navigation tabs -->
-<div id="navigation" data-click-category="nav" data-click-action="click" role="navigation" aria-label="Main Navigation Container">
-	<ul id="aria-main-nav" class="menu" aria-label="Main Navigation">
-		<li class="home first active"> <a id="firstNavOption" href="" data-click-label="home"><span class="fa fa-home"></span>Home</a></li>
-		
-		<li class="campus-alerts "><a href="alerts" data-click-label="alerts"><span class="fa fa-warning"></span><span class="badge-alert"></span><span class="off-screen"> New</span> Campus Alerts</a></li>
-		
-		<li class="cornell-today "><a id="prelastNavOption" href="resources" data-click-label="resources"><span class="cu-info-icon icon-info-news"></span>Resources</a></li>
-		
-	
-	</ul>
-</div> 
-
-
-        </div>
-        
-
-        
-        <div class="grid_item grid_header grid_main">
-          <div class="header_group">
-            <div class="header_title">
-              <div class="cu-title">CUinfo</div>
-              <h1 class="h1 cu-info-logotype">Faculty &amp; Staff</h1> 
-            </div>
-            <div class="header_weather">
-              <h2 class="off-screen">Ithaca Weather</h2>
-              <!-- This file is dynamically updated by our weather page. --><a class="cuinfo-weather" href="//www.cornell.edu/weather/" title="Current Ithaca weather" data-click-category="weather" data-click-action="click" data-click-label="current conditions">  
-					
-					<div class="ftr-weather-icon"><div class="icon-clear-day" role="img" alt="A Few Clouds"></div></div><div class="ftr-weather-location">Ithaca, New York</div><div class="ftr-weather-temp"><span id="currentTempIthacaF">57</span>&deg;F / <span id="currentTempIthacaC">14</span>&deg;C</div></a>
-
+              <!-- Navbar -->
+              <ul class="navbar-nav p-0">
+                <li class="nav-item">
+                  <a class="btn btn-ghost-secondary btn-sm" href="https://htmlstream.com/contact-us" target="_blank">
+                    Get Support <i class="bi-box-arrow-up-right ms-1"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary btn-sm" href="../index.html">
+                    <i class="bi-eye me-1"></i> Preview Demo
+                  </a>
+                </li>
+              </ul>
+              <!-- End Navbar -->
             </div>
           </div>
+          <!-- End Col -->
         </div>
-        
+        <!-- End Row -->
+      </nav>
+    </div>
+  </header>
+  <!-- ========== END HEADER ========== -->
 
-        
-       
-            <!-- Special Alerts --> 
-            
-            <div class="hidden" aria-hidden="true">
-              <style>
-.cu-info-block.campus-updates h2 {
-    margin-top: 1.25em;
-}
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="content" role="main">
+    <!-- Navbar -->
+    <nav class="js-nav-scroller navbar navbar-expand-lg navbar-sidebar navbar-vertical navbar-light bg-white border-end" data-hs-nav-scroller-options='{
+            "type": "vertical",
+            "target": ".navbar-nav .active",
+            "offset": 80
+           }'>
+      <!-- Navbar Toggle -->
+      <button type="button" class="navbar-toggler btn btn-white d-grid w-100" data-bs-toggle="collapse" data-bs-target="#navbarVerticalNavMenu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarVerticalNavMenu">
+        <span class="d-flex justify-content-between align-items-center">
+          <span class="h3 mb-0">Nav menu</span>
 
-.cu-info-block.campus-updates .alert-IT .category-style {
-    background: #073949;
-}
-.category-style {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 16em;
-    text-align: center;
-    display: inline-block;
-}
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
 
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </span>
+      </button>
+      <!-- End Navbar Toggle -->
 
-</style>
-
- 
-        
-        <div id="alerts" style="word-break: break-word">
-        	
-				<article class="news-item alert-IT" itemscope="" itemtype="http://schema.org/NewsArticle" data-unixsecs="" aria-label="Unplanned Outage - Some CUView digital signs have a black screen error">
-				
-				<a href="http://itservicealerts.hosting.cornell.edu/view/7320" itemprop="url" class='alert-url' data-click-action="title click | ITalerts" data-click-category="alerts"  data-click-label="Unplanned Outage - Some CUView digital signs have a black screen error">
-				
-				
-
-
-					<div class="news-content">
-
-						<span class="marquee-label featured category-style">
-							
-								IT Alert
-							
-						</span>
-
-						<h2 class="news-headline" itemprop="headline">Unplanned Outage - Some CUView digital signs have a black screen error</h2>
-
-						
-              <time class="news-date" datetime="2024-09-12 7:25" 
-              itemprop="datePublished" pubdate="">Sep 12, 2024 7:25 AM</time>
-						
-								<div class="hide-content-format" style="display: none;"><div>About 35 CUView digital signs currently display a black screen, however, most digital signs are working correctly. CIT support staff are working with both vendors, Brightsign (the media player manufacturer) and Appspace to restore service to the affected signs.&nbsp; After about three minutes, those signs are rebooting but then their sync to Appspace leads either to a brief display of content or a black screen. The error seems to be caused by a sync issue with the Appspace cloud. The tickets have been escalated to their vendor's engineering groups. CIT will update this alert as soon as we have more information.<br><br><br></div></div>
-								<p class="alert-details"><div>About 35 CUView digital signs currently display a black screen, however, most digital signs are working correctly. CIT support staff are working with both vendors, Brightsign (the media player manufacturer) and Appspace to restore service to the affected signs.&nbsp; After about three minutes, those signs are rebooting but then their sync to Appspace leads either to a brief display of content or a black screen. The error seems to be caused by a sync issue with the Appspace cloud. The tickets have been escalated to their vendor's engineering groups. CIT will update this alert as soon as we have more information.<br><br><br></div></p>
-							
-							
-					</div>
-						
-					</a>
-					
-					
-				
-			</article>
-		
-        </div>
-      
-            </div> 
-
-            
-  <div id="alerts-text-notify" class="alerts-text-notify-hidden grid_item grid_alerts grid_main">
-      <a href="alerts" class="cuinfo-button accept" data-click-action="view new alerts" data-click-label="mobile button" data-click-category="alerts">
-        <span class="fa fa-warning"></span>
-        &nbsp;<span class="num-alerts"></span>
-        &nbsp;new alerts</a>
-  </div>
-
-         
-        
-
-        
-        <div class="grid_item grid_sidebarGroup hidden_desktop cu-info-sidebar" aria-hidden="true">
-          
-          <!-- People Search -->
-          <div class="sidebar_item sidebar_search divider">
-            
-<div class="cu-info-block people-search">
-	<h3 class="cu-title"><span class="fa fa-user"></span> People Search</h3>
-	<form action="https://www.cornell.edu/search/sso/people.cfm" id="cu-people-search-mobile" class="cuinfo-form" method="get" role="search" aria-label="People Search mobile">
-		<label for="cu-people-search-querymobile" class="off-screen">Search:</label>
-		<input id="cu-people-search-querymobile" name="q" placeholder="Search by name, netid, phone, or unit..." type="search" data-click-category="search" data-click-action="click" data-click-label="CUinfo-people-search" />
-		<button name="btnG" type="submit" value="go" aria-label="Go"><div class="icon-arrow-right"></div></button>
-	</form>
-</div> 
-
+      <!-- Navbar Collapse -->
+      <div id="navbarVerticalNavMenu" class="collapse navbar-collapse">
+        <div class="navbar-brand-wrapper border-end" style="height: auto;">
+          <!-- Default Logo -->
+          <div class="d-flex align-items-center mb-3">
+            <a class="navbar-brand" href="../documentation/index.html" aria-label="Space">
+              <img class="navbar-brand-logo" src="../assets/svg/logos/logo.svg" alt="Logo">
+            </a>
+            <a class="navbar-brand-badge" href="../documentation/changelog.html">
+              <span class="badge bg-soft-primary text-primary ms-2">v4.3.1</span>
+            </a>
           </div>
+          <!-- End Default Logo -->
 
-          
-          <div class="sidebar_item sidebar_favorites favorite_links divider" data-ajax-href="_includes/cuinfo-favorites.cfm" data-path-to-resources="resources" >
-             
-
-<h3 class="cu-title link-pile-title">Favorite links</h3> 
-
-
-    <a href="resources?editFav=on" class="favorites-customize" data-click-action="Customize favorites" data-click-label="Customize link"><span class="fa fa-gear ignoreGA"></span>Customize</a>
-    <div class="cuinfo-note">
-        <em>You haven't added any favorites. You can customize this section with your favorite links from the <a aria-label="Resources, with customization turned on" href="resources?editFav=on">Resources</a> page.</em>
-        
-    </div>
-
-
-          </div>
-          
+          <!-- Nav -->
+          <ul class="nav nav-segment nav-fill nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active" href="../documentation/index.html">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../snippets/index.html">Snippets</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
         </div>
-        
 
-         
-        
-        <div class="grid_item grid_body grid_main cu-info-main">
-          
-    <div class="cuinfo-top-stories section">
-        <h2 class="cu-title underline">This week's highlights</h2>
-        <ul>
-        
-            <li><a href="https://hr.cornell.edu/culture/appreciation-recognition/university-awards/presidents-awards-employee-excellence" itemprop="url" title="Nominations for President's Awards for Employee Excellence due Aug. 31" target="blank" data-click-action="content | This week's highlights" data-click-label="1|931362A2-C840-B3A1-271CFFC4C4E75AFB|40BED669-F993-D565-2AFB3892AD491558">Nominations for President's Awards for Employee Excellence due Aug. 31</a></li>
-        
-            <li><a href="https://news.cornell.edu/stories/2024/08/committee-recommend-final-expressive-activity-policy" itemprop="url" title="Committee to recommend final expressive activity policy" target="blank" data-click-action="content | This week's highlights" data-click-label="2|FD31312C-A485-8DBE-676CB0BA40ADA074|40BED669-F993-D565-2AFB3892AD491558">Committee to recommend final expressive activity policy</a></li>
-        
-            <li><a href="https://news.cornell.edu/stories/2024/08/shimmer-1920s-fashion-exhibit-displays-influencers-power" itemprop="url" title="With shimmer, 1920s fashion exhibit displays influencers’ power" target="blank" data-click-action="content | This week's highlights" data-click-label="3|FD195771-D6A8-ED96-23B48B5C511C75DF|40BED669-F993-D565-2AFB3892AD491558">With shimmer, 1920s fashion exhibit displays influencers’ power</a></li>
-        
-            <li><a href="https://news.cornell.edu/stories/2024/08/2030-project-plans-climate-themed-speaker-series" itemprop="url" title="2030 Project plans climate-themed speaker series" target="blank" data-click-action="content | This week's highlights" data-click-label="4|FD3809B7-9DB1-445E-46A9CAE8313B4015|40BED669-F993-D565-2AFB3892AD491558">2030 Project plans climate-themed speaker series</a></li>
-        
-            <li><a href="https://cornell.ca1.qualtrics.com/jfe/form/SV_cumUoHk9kqB59wq" itemprop="url" title="Register for Preparing for Baby Series, starting Sept. 25" target="blank" data-click-action="content | This week's highlights" data-click-label="5|931E4E8D-B4FD-1F5D-99185C9853BFB2BC|40BED669-F993-D565-2AFB3892AD491558">Register for Preparing for Baby Series, starting Sept. 25</a></li>
-        
-        </ul>
-    </div>
+        <div class="docs-navbar-sidebar-aside-body navbar-sidebar-aside-body">
+          <ul id="navbarSettings" class="navbar-nav nav nav-vertical nav-tabs nav-tabs-borderless nav-sm">
+            <li class="nav-item">
+              <span class="nav-subtitle">Documentation</span>
+            </li>
 
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Campus</h2>
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/index.html">Introduction</a>
+            </li>
 
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://news.cornell.edu/stories/2024/08/white-coat-ceremony-welcomes-class-2028" itemprop="url" title="White Coat ceremony welcomes class of 2028" target="blank" data-click-action="content | Campus" data-click-label="1|93250B3B-C427-7C72-9CC778F0F2EE3D88|5A8F9FD7-AAC5-A559-7D76A51865DEF23F">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/FD075256-C76A-0E1B-5184426123BF16A2.jpg">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    White Coat ceremony welcomes class of 2028
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
+            <li class="nav-item my-2 my-lg-5"></li>
 
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/08/minnie-music-and-more-cornellians-chill-quad" itemprop="url" title="Minnie, music and more: Cornellians ‘chill on the quad’" target="blank" data-click-action="content | Campus" data-click-label="2|A14D29AE-F54F-1310-501B193D9A897055|5A8F9FD7-AAC5-A559-7D76A51865DEF23F">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Minnie, music and more: Cornellians ‘chill on the quad’
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/06/cornell-lab-ornithology-visitor-center-reopens" itemprop="url" title="Cornell Lab of Ornithology Visitor Center reopens" target="blank" data-click-action="content | Campus" data-click-label="3|07DCAE06-0B40-252F-BB617EFE0ADD1B36|5A8F9FD7-AAC5-A559-7D76A51865DEF23F">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Cornell Lab of Ornithology Visitor Center reopens
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/06/stay-safe-cornells-gorgeous-gorges" itemprop="url" title="Stay safe in Cornell’s gorgeous gorges" target="blank" data-click-action="content | Campus" data-click-label="4|E56BA99E-D84F-B0DE-6F44B2580597905B|5A8F9FD7-AAC5-A559-7D76A51865DEF23F">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Stay safe in Cornell’s gorgeous gorges
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
+            <li class="nav-item">
+              <span class="nav-subtitle">Getting started</span>
+            </li>
 
-        
+            <li class="nav-item">
+              <a class="nav-link active" href="../documentation/getting-started.html">Getting Started</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/gulp.html">Gulp</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/customization.html">Customization</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/credits.html">Credits</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/changelog.html">Changelog</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Design &amp; Graphics</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/bs-icons.html">Bootstrap Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/duotone-icons.html">Duotone Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/illustrations.html">Illustrations</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <span class="nav-subtitle">Components</span>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/accordion.html">Accordion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/alerts.html">Alerts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/avatars.html">Avatars</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/badge.html">Badge</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/breadcrumb.html">Breadcrumb</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/buttons.html">Buttons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/cards.html">Cards</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/collapse.html">Collapse</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/column-divider.html">Column Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/devices.html">Devices</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/divider.html">Divider</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dropdowns.html">Dropdowns</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/icons.html">Icons</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/list-group.html">List Group</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/lists.html">Lists</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/legend-indicator.html">Legend Indicator</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/modal.html">Modal</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/offcanvas.html">Offcanvas</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/page-header.html">Page Header</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/pagination.html">Pagination</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/popovers.html">Popovers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/progress.html">Progress</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/shapes.html">Shapes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/spinners.html">Spinners</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/steps.html">Steps</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tab.html">Tab</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tables.html">Tables</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/text-highlight.html">Text Highlight</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/toasts.html">Toasts</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/tooltips.html">Tooltips</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/typography.html">Typography</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Navbars</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/navbar.html">Navbar</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/navs.html">Navs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/mega-menu.html">Mega Menu</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/scrollspy.html">Scrollspy</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Basic forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/basic-forms.html">Basic Forms</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/checks-and-switches.html">Checks &amp; Switches</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/input-group.html">Input Group</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Advanced Forms</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/select.html">Advanced Select</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/file-attachments.html">File Attachments</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/dropzone.html">Drag’ n’ Drop File Uploads</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/quill.html">WYSIWYG Editor</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/quantity-counter.html">Quantity Counter</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/input-mask.html">Input Mask</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/step-forms.html">Step Forms (Wizards)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/range-slider.html">Range Slider (noUiSlider)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/add-field.html">Add Field</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/toggle-password.html">Toggle Password</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/count-characters.html">Count Characters</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/toggle-switch.html">Toggle Switch</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/toggle-state.html">Toggle State</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/switch.html">Switch</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Media</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/fslightbox.html">Fullscreen Lightbox</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/video-bg.html">Video Background</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/video-player.html">Video Player</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/swiper.html">Swiper</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle">Others</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/maps-leaflet.html">Maps (Leaflet)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/chartjs.html">Chart.js</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/circles.html">Circles.js (Pie Chart)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/sticky-block.html">Sticky Block</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/countdown.html">Countdown</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/sorting.html">Sorting (Shuffle.js)</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/go-to.html">Go To</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/show-animation.html">Show Animation</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/typedjs.html">Typed.js</a>
+            </li>
+
+            <li class="nav-item my-2 my-lg-5"></li>
+
+            <li class="nav-item">
+              <small class="nav-subtitle d-block">Utilities</small>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/backgrounds.html">Backgrounds</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/borders.html">Borders</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/colors.html">Colors</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/links.html">Links</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/position.html">Position</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/rotations.html">Rotations</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/shadows.html">Shadows</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/sizing.html">Sizing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/spacing.html">Spacing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="../documentation/z-index.html">Z-index</a>
+            </li>
+          </ul>
         </div>
-    </div>
-
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Workplace</h2>
-
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://hr.cornell.edu/stories/staff-stories-chloe-greenhalgh" itemprop="url" title="Staff Stories: Chloe Greenhalgh" target="blank" data-click-action="content | Workplace" data-click-label="1|C7C943CF-B39A-ECBF-12B81088C7F22F0C|5A92D125-ECBE-7DA1-5841CDBAA814D1BC">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/C7CC9DE5-A9B3-6763-C1729EB95A85DB59.png">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    Staff Stories: Chloe Greenhalgh
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/08/zhang-named-provosts-fellow-public-engagement" itemprop="url" title="Zhang named provost’s fellow for public engagement" target="blank" data-click-action="content | Workplace" data-click-label="2|930CC2CF-96DB-BFFE-0A373AC3F1F6100B|5A92D125-ECBE-7DA1-5841CDBAA814D1BC">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Zhang named provost’s fellow for public engagement
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://hr.cornell.edu/news/workday-learning-launch-september-30" itemprop="url" title="Workday Learning to launch Sept. 30, replacing CU Learn" target="blank" data-click-action="content | Workplace" data-click-label="3|A0AADE93-B2B8-EB70-0CBE230511668560|5A92D125-ECBE-7DA1-5841CDBAA814D1BC">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Workday Learning to launch Sept. 30, replacing CU Learn
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://it.cornell.edu/news/save-250-your-smartsheet-subscription" itemprop="url" title="Save $250 on your Smartsheet subscription" target="blank" data-click-action="content | Workplace" data-click-label="4|A0A2BBB9-04DB-39B5-C4C5342AE9CA79DF|5A92D125-ECBE-7DA1-5841CDBAA814D1BC">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Save $250 on your Smartsheet subscription
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
-
-        
-        </div>
-    </div>
-
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Academics &amp; Research</h2>
-
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://news.cornell.edu/stories/2024/08/space-farm-readying-nasa-satellites-help-growers" itemprop="url" title="From space to farm: readying NASA satellites to help growers" target="blank" data-click-action="content | Academics &amp; Research" data-click-label="1|FD1EFC32-D198-C7CD-B42719D29724D9FC|5A968AAC-E892-6FC4-4D20787FBAB22F00">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/FD20AE45-0060-D1E1-E9F6DF6EB6FC384A.jpg">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    From space to farm: readying NASA satellites to help growers
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/07/high-schoolers-investigate-programmable-plants" itemprop="url" title="High schoolers investigate programmable plants" target="blank" data-click-action="content | Academics &amp; Research" data-click-label="2|A1421F15-BE38-46AD-D0C2DF465AE5CD2A|5A968AAC-E892-6FC4-4D20787FBAB22F00">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        High schoolers investigate programmable plants
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/08/summer-program-gives-undergraduates-taste-research-life" itemprop="url" title="Summer program gives undergraduates a taste of research life" target="blank" data-click-action="content | Academics &amp; Research" data-click-label="3|932BC895-E2D8-00D3-78F82B93CAA1221E|5A968AAC-E892-6FC4-4D20787FBAB22F00">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Summer program gives undergraduates a taste of research life
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/08/general-anesthetic-may-lead-new-epilepsy-treatments" itemprop="url" title="General anesthetic may lead to new epilepsy treatments" target="blank" data-click-action="content | Academics &amp; Research" data-click-label="4|A122422C-0C3A-DF79-FC443DB29C3354B4|5A968AAC-E892-6FC4-4D20787FBAB22F00">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        General anesthetic may lead to new epilepsy treatments
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
-
-        
-        </div>
-    </div>
-
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Awards &amp; Honors</h2>
-
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://news.cornell.edu/stories/2024/08/program-manager-creates-inclusive-space-staff" itemprop="url" title="A&S program manager creates inclusive space for staff" target="blank" data-click-action="content | Awards &amp; Honors" data-click-label="1|FD54D252-EE06-0997-EC23BC733E0F9B58|5A9C95A7-D431-0856-006DFEB6778B360B">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/FD57E3F9-F056-B1B9-D9DB8F376560CB77.jpg">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    A&S program manager creates inclusive space for staff
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/07/10m-gift-seneca-foods-will-support-cornell-food-venture-center" itemprop="url" title="$10M gift from Seneca Foods will support the Cornell Food Venture Center" target="blank" data-click-action="content | Awards &amp; Honors" data-click-label="2|A0E6C9D8-A4CF-8149-17D5C78BB13832C9|5A9C95A7-D431-0856-006DFEB6778B360B">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        $10M gift from Seneca Foods will support the Cornell Food Venture Center
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://hr.cornell.edu/culture/appreciation-recognition/university-awards/presidents-awards-employee-excellence" itemprop="url" title="Aug 31: Nominations for President's Awards for Employee Excellence 2024" target="blank" data-click-action="content | Awards &amp; Honors" data-click-label="3|A10C4CE1-CED6-BE89-2D49A66F7A500F2C|5A9C95A7-D431-0856-006DFEB6778B360B">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Aug 31: Nominations for President's Awards for Employee Excellence 2024
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/06/staff-graduates-celebrated-academic-excellence" itemprop="url" title="Staff graduates celebrated for academic excellence" target="blank" data-click-action="content | Awards &amp; Honors" data-click-label="4|E6255952-960C-5582-8E8771FC23ADCA4A|5A9C95A7-D431-0856-006DFEB6778B360B">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Staff graduates celebrated for academic excellence
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
-
-        
-        </div>
-    </div>
-
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Diversity &amp; Inclusion</h2>
-
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://news.cornell.edu/stories/2024/08/public-service-legacies-two-ithaca-women-preserved-statues" itemprop="url" title="Public service legacies of two Ithaca women preserved in statues" target="blank" data-click-action="content | Diversity &amp; Inclusion" data-click-label="1|FD40C1FD-B7C5-0F7C-B26E0F17F61916A0|5A9FC37F-C3B0-BE82-54FB9E2E37295F24">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/FD42A43C-A15B-4AB4-95FA3424CC757C24.jpg">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    Public service legacies of two Ithaca women preserved in statues
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/08/academic-boot-camp-tackles-mission-imposter-syndrome" itemprop="url" title="Academic boot camp tackles mission: imposter syndrome" target="blank" data-click-action="content | Diversity &amp; Inclusion" data-click-label="2|9335733F-B962-8841-7BBB31769ED70546|5A9FC37F-C3B0-BE82-54FB9E2E37295F24">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Academic boot camp tackles mission: imposter syndrome
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/07/leak-vashistha-recognized-excellence-promoting-diversity" itemprop="url" title="Leak, Vashistha recognized for excellence in promoting diversity" target="blank" data-click-action="content | Diversity &amp; Inclusion" data-click-label="3|EFAC6472-EF7C-8C35-F08561B4B784E5B6|5A9FC37F-C3B0-BE82-54FB9E2E37295F24">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Leak, Vashistha recognized for excellence in promoting diversity
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/06/early-version-black-pride-brought-us-step-closer-juneteenth" itemprop="url" title="Early version of Black pride brought US a step closer to Juneteenth" target="blank" data-click-action="content | Diversity &amp; Inclusion" data-click-label="4|E5149942-EB08-6E6B-E0DD88B5F90E89FF|5A9FC37F-C3B0-BE82-54FB9E2E37295F24">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Early version of Black pride brought US a step closer to Juneteenth
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
-
-        
-        </div>
-    </div>
-
-    <div class="cuinfo-fs-section section">
-        <h2 class="cu-title underline">Wellness &amp; Well-being</h2>
-
-        <div class="grid-boxes two-col">
-            <div class="grid-box">
-                <ul>
-                    
-                    <li>
-                        <a href="https://scl.cornell.edu/recreation/employee-wellness-program/employee-outreach#groupexercise" itemprop="url" title="Group Exercise Classes" target="blank" data-click-action="content | Wellness &amp; Well-being" data-click-label="1|A0BEC97B-00B1-1EED-70E25CD7FF32853E|5AA59307-049D-DAFF-951C0E606BEA10C7">
-                            <img src="//media.univcomm.cornell.edu/photos/400x225/A0D50F20-E596-B60B-B0A08D39B4B4AA69.png">
-                            <div class="grid-caption">
-                                <span class="grid-title">
-                                    Group Exercise Classes
-                                </span>
-                            </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-
-            
-                <div class="grid-box">
-                    <ul>
-                        
-                            <li class="news-item">
-                                <a href="https://ithacatrails.org/" itemprop="url" title="Explore the beauty of the Ithaca Trails" target="blank" data-click-action="content | Wellness &amp; Well-being" data-click-label="2|04A11097-AB69-1DD0-FE77308BE344342D|5AA59307-049D-DAFF-951C0E606BEA10C7">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Explore the beauty of the Ithaca Trails
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://news.cornell.edu/stories/2024/06/impact-dietary-fiber-varies-person-person" itemprop="url" title="Impact of dietary fiber varies from person to person" target="blank" data-click-action="content | Wellness &amp; Well-being" data-click-label="3|08466E8E-0406-9AE9-F3AF5F9ADD5FB812|5AA59307-049D-DAFF-951C0E606BEA10C7">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Impact of dietary fiber varies from person to person
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                            <li class="news-item">
-                                <a href="https://scl.cornell.edu/recreation/recreation/recreation/recreation/recreation/employee-wellness-program/employee-wellness-recreation-memberships/membership-perks" itemprop="url" title="Check out employee recreation membership perks" target="blank" data-click-action="content | Wellness &amp; Well-being" data-click-label="4|7006639F-F6DE-5507-97167DD74824E92A|5AA59307-049D-DAFF-951C0E606BEA10C7">
-                                    
-                                    <div class="news-content">
-                                        <span class="news-headline">
-                                        Check out employee recreation membership perks
-                                        </span>
-                                    </div>
-                                </a>
-                            </li>
-                        
-                    </ul>
-                </div>
-            
-
-        
-        </div>
-    </div>
-
-        </div>
-        
-        
-
-        
-        <div class="grid_item grid_sidebarGroup cu-info-sidebar divider" id="sidebar_main">
-          
-          <!-- People Search -->
-          <div class="sidebar_item sidebar_search hidden_mobile divider" aria-hidden="true">
-            
-<div class="cu-info-block people-search">
-	<h3 class="cu-title"><span class="fa fa-user"></span> People Search</h3>
-	<form action="https://www.cornell.edu/search/sso/people.cfm" id="cu-people-search-desktop" class="cuinfo-form" method="get" role="search" aria-label="People Search desktop">
-		<label for="cu-people-search-querydesktop" class="off-screen">Search:</label>
-		<input id="cu-people-search-querydesktop" name="q" placeholder="Search by name, netid, phone, or unit..." type="search" data-click-category="search" data-click-action="click" data-click-label="CUinfo-people-search" />
-		<button name="btnG" type="submit" value="go" aria-label="Go"><div class="icon-arrow-right"></div></button>
-	</form>
-</div> 
-
-          </div>
-
-          
-          <div class="sidebar_item sidebar_favorites favorite_links divider hidden_mobile" aria-hidden="true">
-             
-
-<h3 class="cu-title link-pile-title">Favorite links</h3> 
-
-
-    <a href="resources?editFav=on" class="favorites-customize" data-click-action="Customize favorites" data-click-label="Customize link"><span class="fa fa-gear ignoreGA"></span>Customize</a>
-    <div class="cuinfo-note">
-        <em>You haven't added any favorites. You can customize this section with your favorite links from the <a aria-label="Resources, with customization turned on" href="resources?editFav=on">Resources</a> page.</em>
-        
-    </div>
-
-
-          </div>
-          
-
-       
-        </div>
-        
-
       </div>
-    </div>
-  </div>
+      <!-- End Navbar Collapse -->
+    </nav>
+    <!-- End Navbar -->
 
-
-
-
-
-    <!-- Overlay for modals and to provide better focus-->
-    <div id="cu-overlay"></div>
-
-    
-       
-
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="_cornell-assets/core/js/lib/jquery.js"><\/script>')</script>
-    
-    
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrolldepth/0.9.1/jquery.scrolldepth.min.js"></script>
-    <script src="./static/js/cornelledu.js"></script>
-    <script src="./static/js/lib/plugins.js"></script>
-    <script src="./static/js/lib/equalize.min.js"></script>
-    <script src="./static/js/core/cornell.js"></script>
-    <script src="./static/js/core/js/Imager.min.js"></script>
-    <script src="./static/js/linkify.min.js"></script>
-    <script src="./static/js/linkify-jquery.min.js"></script>
-    
-        <script src="./static/js/date.js"></script>
-    
-    
-    
-    <script src="./static/js/jquery.timeago.js" type="text/javascript"></script>
-
-    <!-- CUinfo main javascript -->
-    
-    <script src="./static/js/cuinfo.js" type="text/javascript"></script>
-    <script src="./static/js/jquery.shorten.js" type="text/javascript"></script>
-
-
-
-
-
-   <script>
-   if (typeof Imager !=="undefined"){
-     // for increasing page load speed on mobile
-     new Imager({availableWidths:{
-       400:'377x212',
-       500:'400x225',
-       600:'1280x720',
-     }});
-     new Imager('.honeycomb-tile',{availableWidths:{
-       400:'377x212',
-       600:'1280x720'
-     }});
-   }
-</script>
-
-<script>
- 
-
-  //taken from underscore.js
-  function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      var later = function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-   
-  
-	  $('#alerts').linkify();
-
-    // Scroll Depth
-
-
-    function trackScrollDepth(elements){
-      jQuery.scrollDepth({
-        minHeight: 0,
-        elements: elements,
-        percentage: true,
-        userTiming: false,
-        pixelDepth: false,
-        nonInteraction: false
-      });
-    }
-
-
-    $(document).ready(function(){
-      // GET ELEMENTS
-      var scrollElements = new Array();
-      $('.cu-info-main .cu-title').each(function(){
-        var id = $(this).html().replace("&amp;","and").split(' ').join('_').toLowerCase();
-        $(this).attr('id',id);
-        scrollElements.push( '#'+id );
-      });
-      
-      // Trigger Scroll Depth
-      trackScrollDepth(scrollElements);
-    });
-      
-
-</script>
-<script type="text/javascript">
-  $(document).ready(function() {
-  
-    $(".comment").shorten({
-  "showChars" : 300,
-  "moreText"  : "read more",
-  "lessText"  : "<<",
-});
-  
-  });
-</script>
-
-
-<!-- this is updated app35--><!-- Footer -->
-<footer id="cu-ftr" data-click-category="footer" data-click-action="links">
-    <div class="cu-ftr-inner" role="navigation" aria-label="Footer Navigation">
-        <div class="ftr-info">
-
-        <a href="https://www.cornell.edu/about/locations/ithaca/" class="ftr-location-link" data-click-label="Ithaca, New York" style="position: absolute; top: 0; left: 0; bottom: 0; padding: 18px 0; color: #ccc; font-size: 14px">Ithaca, New York</a>
-
-        <ul class="ftr-utility">
-            <li><a href="https://universityrelations.cornell.edu/" data-click-label="University Relations">University Relations</a></li>
-            <li><a href="https://privacy.cornell.edu/" data-click-label="University Privacy">University Privacy</a></li> 
-            <li><a href="//www.cornell.edu/accessibility-assistance.cfm" data-click-label="web accessibility help">Web Accessibility Assistance</a></li>
-            <li><a href="//www.cornell.edu/copyright.cfm" data-click-label="Copyright">Copyright</a></li>
-            <li><a href="//www.cornell.edu/site-info.cfm" data-click-label="Site Information">Site Information</a></li>
-            <li><a href="//www.cornell.edu/contact" data-click-label="Contact">Contact</a></li>
-        </ul>
-        
-        <ul class="ftr-social" data-click-action="social icons">
-            <li>
-            <a href="https://www.facebook.com/Cornell" title="Find us on Facebook" data-click-label="Facebook">
-                <div class="social-icon icon-facebook"></div>
-                <span class="social-label">Facebook</span>
-            </a>
-            </li>
-            <li>
-            <a href="https://twitter.com/Cornell" title="Follow us on Twitter" data-click-label="Twitter">
-                <div class="social-icon icon-twitter"></div>
-                <span class="social-label">Twitter</span>
-            </a>
-            </li>
-            <li>
-            <a href="http://instagram.com/cornelluniversity" title="Find us on Instagram" data-click-label="Instagram">
-                <div class="social-icon icon-instagram"></div>
-                <span class="social-label">Instagram</span>
-            </a>
-            </li>
-            <li>
-            <a href="http://www.youtube.com/cornelluniversity/" title="Watch us on YouTube" data-click-label="YouTube">
-                <div class="social-icon icon-youtube"></div>
-                <span class="social-label">YouTube</span>
-            </a>
-            </li>
-        </ul>
+    <!-- Content -->
+    <div class="navbar-sidebar-aside-content content-space-1 content-space-md-2 px-lg-5 px-xl-10">
+      <!-- Page Header -->
+      <div class="docs-page-header">
+        <div class="row align-items-center">
+          <div class="col-sm">
+            <h1 class="docs-page-header-title">Getting Started</h1>
+            <p class="docs-page-header-text">Front - Multipurpose Template + UI KIT for building responsive, mobile-first sites, with Bootstrap Framework.</p>
+          </div>
         </div>
+      </div>
+      <!-- End Page Header -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <div class="d-sm-flex">
+          <div class="flex-shrink-0">
+            <img class="avatar avatar-xl mb-2 mb-sm-0" src="../assets/svg/illustrations/oc-megaphone.svg" alt="Image Description">
+          </div>
+
+          <div class="flex-grow-1 ms-sm-4">
+            <h3>Front is a Static HTML Template</h3>
+            For the time being, we do <span class="fw-semibold">NOT</span> offer any tutorials or any other materials on how to integrate Front with any CMS, Web Application Frameworks (including Angular, Vue, React, etc.) or any other similar technology. However, since <span class="fw-semibold">Front is a static HTML/CSS and JS template</span>, then it <em>should be compatible</em> with any backend technology and frameworks.
+          </div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <!-- Alert -->
+      <div class="alert alert-soft-dark" role="alert">
+        <div class="d-flex align-items-baseline">
+          <div class="flex-shrink-0">
+            <i class="bi-info-circle me-1"></i>
+          </div>
+
+          <div class="flex-grow-1 ms-2">We highly recommend to check out <a class="link" href="https://themes.getbootstrap.com/guide/" target="_blank">The Guide <i class="bi-box-arrow-up-right"></i></a> an official Bootstrap Theme guidelines by Bootstrap core team.</div>
+        </div>
+      </div>
+      <!-- End Alert -->
+
+      <!-- Heading -->
+      <h2 id="file-structure" class="hs-docs-heading">
+        File Structure <a class="anchorjs-link" href="#file-structure" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <details open>
+        <summary>
+          <i class="bi-folder text-body me-1"></i> <strong>Front</strong>
+        </summary>
+
+        <ul class="list-py-1 list-unstyled ps-4">
+          <li>
+            <details open>
+              <summary>
+                <i class="bi-folder text-body me-1"></i> <strong>src</strong>
+              </summary>
+              <ul class="list-unstyled ps-4">
+                <li>
+                  <details open>
+                    <summary>
+                      <i class="bi-folder text-body me-1"></i> <strong>assets</strong>
+                    </summary>
+                    <ul>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>css</strong> - <span class="text-body">Compiled CSS files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>img</strong> - <span class="text-body">Image files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>json</strong> - <span class="text-body">JSON files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>js</strong> - <span class="text-body">Core Javascript and library wrapper files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>scss</strong> - <span class="text-body">SASS (SCSS) source files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>svg</strong> - <span class="text-body">SVG files</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>svg-src</strong> - <span class="text-body">SVG source files where variables can be passed (files will be generated into <strong>svg</strong> folder)</span>
+                      </li>
+                      <li><i class="bi-folder text-body me-1"></i>
+                        <strong>vendor</strong> - <span class="text-body">Third pary libraries (plugins)</span>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li>
+                  <i class="bi-folder text-body me-1"></i> <strong>partials</strong> - <span class="text-body">HTML partials, learn more details on Front's <a class="link" href="../documentation/gulp.html#gulp-file-include">Gulp Documentation</a> page</span>
+                </li>
+
+                <li>
+                  <i class="bi-folder text-body me-1"></i> <strong>snippets</strong> - <span class="text-body">Snippet pages</span>
+                </li>
+
+                <li>
+                  <i class="bi-folder text-body me-1"></i> <strong>documentation</strong> - <span class="text-body">Documentation pages</span>
+                </li>
+
+                <li><i class="bi-image me-1"></i> favicon.ico</li>
+                <li><i class="bi-file-text me-1"></i> index.html</li>
+                <li><i class="bi-file-text me-1"></i> ...</li>
+              </ul>
+            </details>
+          </li>
+
+          <li>
+            <i class="bi-folder text-body me-1"></i> <strong>dist</strong> - <span class="text-body">Generated distribution files</span>
+          </li>
+
+          <li>
+            <i class="bi-folder text-body me-1"></i> <strong>gulpfiles</strong> - <span class="text-body">Gulp Toolkit files</span>
+          </li>
+
+          <li>
+            <i class="bi-folder text-body me-1"></i> <strong><s>build</s></strong> - <span class="text-body">Generated performance ready fully production files (by default the folder is not included)</span>
+          </li>
+
+          <li>
+            <i class="bi-folder text-body me-1"></i> <strong><s>node_modules</s></strong> - <span class="text-body">NPM dependencies (by default the folder is not included)</span>
+          </li>
+
+          <li><i class="bi-file-text me-1"></i> config.js</li>
+          <li><i class="bi-file-text me-1"></i> gulpfile.js</li>
+          <li><i class="bi-file-text me-1"></i> package-lock.json</li>
+          <li><i class="bi-file-text me-1"></i> package.json</li>
+          <li><i class="bi-file-text me-1"></i> README.md</li>
+        </ul>
+      </details>
+
+      <!-- Heading -->
+      <h2 id="starter-template" class="hs-docs-heading">
+        Starter template <a class="anchorjs-link" href="#starter-template" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <p>Starter template is a snippet code for blank HTML page. Use the below snippet as a way to quickly start any new blank page. If you are using Front's Gulp Toolkit, you may use HTML (Gulp) snippet code (read more about it on <a class="link" href="../documentation/gulp.html">Gulp</a> page).</p>
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Header -->
+        <div class="card-header">
+          <!-- Nav -->
+          <ul class="nav nav-segment" id="navTab1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="true">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="nav-gulpTab1" href="#nav-gulp1" data-bs-toggle="pill" data-bs-target="#nav-gulp1" role="tab" aria-controls="nav-gulp1" aria-selected="false">HTML (Gulp)</a>
+            </li>
+          </ul>
+          <!-- End Nav -->
+        </div>
+        <!-- End Header -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="navTabContent1">
+          <div class="tab-pane fade show active" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    &lt;!-- Required Meta Tags Always Come First --&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                    &lt;!-- Title --&gt;
+                    &lt;title&gt;Hello, world!&lt;/title&gt;
+
+                    &lt;!-- Favicon --&gt;
+                    &lt;link rel="shortcut icon" href="./favicon.ico"&gt;
+
+                    &lt;!-- Font --&gt;
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"&gt;
+
+                    &lt;!-- CSS Front Template --&gt;
+                    &lt;link rel="stylesheet" href="./assets/css/theme.css"&gt;
+                  &lt;/head&gt;
+
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                    &lt;!-- JS Global Compulsory --&gt;
+                    &lt;script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+                    &lt;!-- JS Front --&gt;
+                    &lt;script src="./assets/js/hs.core.js"&gt;&lt;/script&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+
+          <div class="tab-pane fade" id="nav-gulp1" role="tabpanel" aria-labelledby="nav-gulpTab1">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                  &lt;head&gt;
+                    &lt;!-- Required Meta Tags Always Come First --&gt;
+                    &lt;meta charset="utf-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+
+                    &lt;!-- Title --&gt;
+                    &lt;title&gt;Hello, world!&lt;/title&gt;
+
+                    &lt;!-- Favicon --&gt;
+                    &lt;link rel="shortcut icon" href="@@autopath/favicon.ico"&gt;
+
+                    &lt;!-- Font --&gt;
+                    &lt;link href="@@vars.themeFont" rel="stylesheet"&gt;
+
+                    &lt;!-- CSS Front Template --&gt;
+                    &lt;!-- bundlecss:theme [@@autopath] --&gt;
+                    &lt;link rel="stylesheet" href="@@autopath/assets/css/theme.css"&gt;
+                  &lt;/head&gt;
+
+                  &lt;body&gt;
+                    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+                    &lt;script src="@@autopath/assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+                    &lt;!-- JS Implementing Plugins --&gt;
+                    &lt;!-- bundlejs:vendor [@@autopath] --&gt;
+
+                    &lt;!-- JS Front --&gt;
+                    &lt;!-- bundlejs:theme [@@autopath] --&gt;
+                    &lt;script src="@@autopath/assets/js/hs.core.js"&gt;&lt;/script&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Card -->
+
+      <!-- Heading -->
+      <h2 id="js-structure" class="hs-docs-heading">
+        JavaScript structure <a class="anchorjs-link" href="#js-structure" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h2>
+      <!-- End Heading -->
+
+      <!-- Heading -->
+      <h3 id="core-js" class="hs-docs-heading mt-2">
+        Core JavaScript <a class="anchorjs-link" href="#core-js" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h3>
+      <!-- End Heading -->
+
+      <p>The foundation of the JavaScript structure in Front is based on one main object which does not change the root when the new functionalities are added, but instead, it only extends without affecting the behavior of the core object. The name of the object is <code>HSCore</code> and the content of this object looks like this:</p>
+
+      <pre class="rounded">
+        <code class="language-js" data-lang="js">
+          /*
+          * HSCore
+          * @version: 2.0.0 (01 Apr 2021)
+          * @author: HtmlStream
+          * @event-namespace: .HSCore
+          * @license: Htmlstream Libraries (https://htmlstream.com/licenses)
+          * Copyright 2021 Htmlstream
+          */
+          'use strict';
+
+          const HSCore = {
+            init: () => {
+              // Botostrap Tootltips
+              var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+              var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+              })
+
+              // Bootstrap Popovers
+              var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+              })
+            }
+          }
+
+          HSCore.init()
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h3 id="essentials-of-hscore-objects" class="hs-docs-heading">
+        Essentials of HS data-attributes <a class="anchorjs-link" href="#essentials-of-hscore-objects" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h3>
+      <!-- End Heading -->
+
+      <p><code>data-hs-*-options</code> - Using the date-attribute, you can completely specify the settings for all plug-in parameters (except for functions) that are in the official documentation. Special cases will be described in the documentation of the corresponding wrappers/plugins. <code>*-</code> name of the wrapper/plugin.</p>
+
+      <p>Parameter names must be enclosed in double quotation marks <code>""</code>. <code>"param": ...</code></p>
+
+      <p>
+        For strings, quotation marks are required.
+        <code>"stringParam": "Test string",</code>
+        <code>"hexParam": "#ff0000"</code>
+      </p>
+
+      <p>For numbers, quotation marks are optional. <code>"intParam": 10</code></p>
+
+      <p>For boolean values, quotation marks can lead to not obvious consequences (due to implicit type conversion). It is recommended that you specify Boolean values without quotation marks. <code>"boolParam": true</code></p>
+
+      <p>For arrays and objects - quotation marks can lead to errors, this does not apply to elements of arrays and objects, which can be simple types (see the description for simple types above).</p>
+
+      <pre class="rounded">
+        <code class="language-html" data-lang="html">
+          "arrayParam": [1, "Test string", "#ff0000", false, 5],
+          "objectParam": {
+            "intParam": 1,
+            "stringParam": "Test string",
+            "hexParam": "#ff0000",
+            "boolParam": false,
+            "intParam2": 5
+          }
+        </code>
+      </pre>
+
+      <!-- Heading -->
+      <h3 id="advantages" class="hs-docs-heading">
+        Advantages <a class="anchorjs-link" href="#advantages" aria-label="Anchor" data-anchorjs-icon="#"></a>
+      </h3>
+      <!-- End Heading -->
+
+      <ul class="list-py-1">
+        <li>Avoiding the probabilities of conflicts between Space codes and third party plugins (libraries).</li>
+        <li>Intuitive clear architecture.</li>
+        <li>Everything is structured, each component in its own file and in its component in the main object.</li>
+        <li>The ability of extending functionality without affecting the behavior of the core object and not changing the existing functionality.</li>
+        <li>Creation of wrapper components simply solves complicated initializations structures for the users.</li>
+        <li>Very easy access to any starters components and core settings from anywhere in the template.</li>
+      </ul>
     </div>
-</footer>
+    <!-- End Content -->
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+
+  <!-- ========== SECONDARY CONTENTS ========== -->
+  <!-- Go To -->
+  <a class="js-go-to go-to position-fixed" href="javascript:;" style="visibility: hidden;" data-hs-go-to-options='{
+       "offsetTop": 700,
+       "position": {
+         "init": {
+           "right": "2rem"
+         },
+         "show": {
+           "bottom": "2rem"
+         },
+         "hide": {
+           "bottom": "-2rem"
+         }
+       }
+     }'>
+    <i class="bi-chevron-up"></i>
+  </a>
+  <!-- ========== END SECONDARY CONTENTS ========== -->
+
+  <!-- JS Implementing Plugins -->
+  <script src="https://htmlstream.com/preview/front-v4.3.1/assets/js/vendor.min.js"></script>
+
+  <!-- JS Front -->
+  <script src="https://htmlstream.com/preview/front-v4.3.1/assets/js/theme.min.js"></script>
 
 
+  <!-- JS Plugins Init. -->
+  <script>
+    (function() {
+      // INITIALIZATION OF HEADER
+      // =======================================================
+      new HSHeader('#header').init()
 
+
+      // INITIALIZATION OF LISTJS COMPONENT
+      // =======================================================
+      const docsSearch = HSCore.components.HSList.init('#docsSearch')
+
+
+      // GET JSON FILE RESULTS
+      // =======================================================
+      fetch('../assets/json/docs-search.json')
+      .then(response => response.json())
+      .then(data => {
+        docsSearch.getItem(0).add(data)
+      })
+
+      // INITIALIZATION OF GO TO
+      // =======================================================
+      new HSGoTo('.js-go-to')
+    })()
+  </script>
 </body>
 </html>
