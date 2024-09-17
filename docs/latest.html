@@ -206,51 +206,7 @@
       </div>
       <!-- End Card -->
 
-      <!-- Heading -->
-      <h2 id="js-structure" class="hs-docs-heading">
-        JavaScript structure <a class="anchorjs-link" href="#js-structure" aria-label="Anchor" data-anchorjs-icon="#"></a>
-      </h2>
-      <!-- End Heading -->
-
-      <!-- Heading -->
-      <h3 id="core-js" class="hs-docs-heading mt-2">
-        Core JavaScript <a class="anchorjs-link" href="#core-js" aria-label="Anchor" data-anchorjs-icon="#"></a>
-      </h3>
-      <!-- End Heading -->
-
-      <p>The foundation of the JavaScript structure in Front is based on one main object which does not change the root when the new functionalities are added, but instead, it only extends without affecting the behavior of the core object. The name of the object is <code>HSCore</code> and the content of this object looks like this:</p>
-
-      <pre class="rounded">
-        <code class="language-js" data-lang="js">
-          /*
-          * HSCore
-          * @version: 2.0.0 (01 Apr 2021)
-          * @author: HtmlStream
-          * @event-namespace: .HSCore
-          * @license: Htmlstream Libraries (https://htmlstream.com/licenses)
-          * Copyright 2021 Htmlstream
-          */
-          'use strict';
-
-          const HSCore = {
-            init: () => {
-              // Botostrap Tootltips
-              var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-              var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-              })
-
-              // Bootstrap Popovers
-              var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-                return new bootstrap.Popover(popoverTriggerEl)
-              })
-            }
-          }
-
-          HSCore.init()
-        </code>
-      </pre>
+     
     </div>
     <!-- End Content -->
   </main>
