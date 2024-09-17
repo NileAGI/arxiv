@@ -292,56 +292,6 @@
           HSCore.init()
         </code>
       </pre>
-
-      <!-- Heading -->
-      <h3 id="essentials-of-hscore-objects" class="hs-docs-heading">
-        Essentials of HS data-attributes <a class="anchorjs-link" href="#essentials-of-hscore-objects" aria-label="Anchor" data-anchorjs-icon="#"></a>
-      </h3>
-      <!-- End Heading -->
-
-      <p><code>data-hs-*-options</code> - Using the date-attribute, you can completely specify the settings for all plug-in parameters (except for functions) that are in the official documentation. Special cases will be described in the documentation of the corresponding wrappers/plugins. <code>*-</code> name of the wrapper/plugin.</p>
-
-      <p>Parameter names must be enclosed in double quotation marks <code>""</code>. <code>"param": ...</code></p>
-
-      <p>
-        For strings, quotation marks are required.
-        <code>"stringParam": "Test string",</code>
-        <code>"hexParam": "#ff0000"</code>
-      </p>
-
-      <p>For numbers, quotation marks are optional. <code>"intParam": 10</code></p>
-
-      <p>For boolean values, quotation marks can lead to not obvious consequences (due to implicit type conversion). It is recommended that you specify Boolean values without quotation marks. <code>"boolParam": true</code></p>
-
-      <p>For arrays and objects - quotation marks can lead to errors, this does not apply to elements of arrays and objects, which can be simple types (see the description for simple types above).</p>
-
-      <pre class="rounded">
-        <code class="language-html" data-lang="html">
-          "arrayParam": [1, "Test string", "#ff0000", false, 5],
-          "objectParam": {
-            "intParam": 1,
-            "stringParam": "Test string",
-            "hexParam": "#ff0000",
-            "boolParam": false,
-            "intParam2": 5
-          }
-        </code>
-      </pre>
-
-      <!-- Heading -->
-      <h3 id="advantages" class="hs-docs-heading">
-        Advantages <a class="anchorjs-link" href="#advantages" aria-label="Anchor" data-anchorjs-icon="#"></a>
-      </h3>
-      <!-- End Heading -->
-
-      <ul class="list-py-1">
-        <li>Avoiding the probabilities of conflicts between Space codes and third party plugins (libraries).</li>
-        <li>Intuitive clear architecture.</li>
-        <li>Everything is structured, each component in its own file and in its component in the main object.</li>
-        <li>The ability of extending functionality without affecting the behavior of the core object and not changing the existing functionality.</li>
-        <li>Creation of wrapper components simply solves complicated initializations structures for the users.</li>
-        <li>Very easy access to any starters components and core settings from anywhere in the template.</li>
-      </ul>
     </div>
     <!-- End Content -->
   </main>
